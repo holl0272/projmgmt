@@ -1,0 +1,6 @@
+%h2 Employee List
+
+#new_btn= link_to('New Employee Record', new_user_path, :remote => true, :class => 'button radius')
+#new_user
+%table#users
+  = render(:partial => 'users')

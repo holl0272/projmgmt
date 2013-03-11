@@ -1,0 +1,9 @@
+%tr
+  %th Job Number
+  %th Deadline
+  %th Description
+  - @projects.each do |project|
+    %tr
+      %td= project.job_num
+      %td= project.deadline
+      %td= project.description

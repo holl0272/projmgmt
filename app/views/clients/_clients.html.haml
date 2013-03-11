@@ -1,0 +1,15 @@
+%tr
+  %th Name
+  %th Address
+  %th Contact
+  %th E-mail
+  %th Phone
+  %th Notes
+  - @clients.each do |client|
+    %tr
+      %td= client.name
+      %td= client.address
+      %td= client.primary_name
+      %td= client.primary_email
+      %td= client.primary_phone
+      %td= client.note

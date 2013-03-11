@@ -1,0 +1,6 @@
+%h2 Project List
+-if @auth.is_admin || @auth.is_pm
+  #new_btn= link_to('New Project', new_project_path, :remote => true, :class => 'button radius')
+#new_project
+%table#projects
+  = render(:partial => 'projects')
